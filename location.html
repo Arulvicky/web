@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+    <body style="background-color:hotpink";>
+    <h1 style="text-align: center;color: cornsilk;font-size:xx-large;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">Location</h1>    
+    <form>
+        <button type="button" class="Close" data-dismiss="modal" aria-label="Close" >
+        <a href="http://127.0.0.1:8000/" class="btn btn-primary" id="test-event" style="padding-right:350%">Home</a><a href="http://127.0.0.1:8000/info" class="btn btn-primary" id="test-event" style="padding-right:350%">ABOUT</a><a href="http://127.0.0.1:8000/address" class="btn btn-primary" id="test-event" style="padding: right 350%">CONTATCT</a>
+        </button>
+    </form> 
+    {% csrf_token %}
+    <p style="color: cornsilk;font-family:'Times New Roman', Times, serif;font-size: 32pt;">At OnWords we built super-personalized, fully-automated smart homes for our customers based on their preferences. We ensure that you get the best possible home automation experience.
+
+    Have a look at our Automation Services provided to select the most suitable pick for your home.</p>
+    <img src="{% static 'address.jpg' %}">
+        <form>
+            <button type="button" class="Close" data-dismiss="modal" aria-label="Close" >
+            <a href="http://127.0.0.1:8000/" class="btn btn-primary" id="test-event" style="padding-right:350%">Next</a><a href="http://127.0.0.1:8000/address" class="btn btn-primary" id="test-event" style="padding-right:350%">Forward</a>
+        </form>
+</body>
+</html>
